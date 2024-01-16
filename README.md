@@ -13,7 +13,9 @@ keep(r, d, f; valid_format) = any(x -> contains(f, x), valid_format)
 # valid formats to keep 
 valid_format = ["txt",".jl"]
 str = code2string(top_folder; keep, valid_format)
-write("test.docx", str)
+file = open("test.docx", "w")
+write(file, str)
+close(file)
 ```
 # Installation
 

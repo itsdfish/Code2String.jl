@@ -14,7 +14,7 @@ module Code2String
     # Keywords 
 
     - `keep`: an optional indictor function specifying which files to keep. The function signature is 
-        `f(dir, root, file; kwargs...) -> Bool` 
+        `f(root, dir, file; kwargs...) -> Bool` 
     - `kwargs...`: optional keyword arguments passed to `keep`
     """
     function code2string(top_folder; keep = (r,d,f; kwargs...) -> true, kwargs...)
