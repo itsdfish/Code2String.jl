@@ -9,7 +9,7 @@ using Code2String
 # top level folder  
 top_folder = "test_folder"
 # an optional function for filtering. return true to keep
-keep(r, d, f; valid_format) = any(x -> contains(f, x), valid_format)
+keep(r, d, f; valid_format) = extension_matches(f, valid_format)
 # valid formats to keep 
 valid_format = ["txt",".jl"]
 str = code2string(top_folder; keep, valid_format)
