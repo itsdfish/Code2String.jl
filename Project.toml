@@ -1,7 +1,7 @@
 name = "Code2String"
 uuid = "96ca8dcf-183a-4ff5-ac3e-0011235b8f55"
 authors = ["itsdfish"]
-version = "0.1.2"
+version = "0.1.3"
 
 [compat]
 julia = "1"

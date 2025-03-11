@@ -48,7 +48,7 @@ Tests whether a file extension matches a specified type.
 function extension_matches(file::String, extension::String)
     # remove . if any exists
     extension = split(extension, ".")[end]
-    str = split(file, ".")[2]
+    str = split(file, ".")[end]
     return extension == str
 end
 
